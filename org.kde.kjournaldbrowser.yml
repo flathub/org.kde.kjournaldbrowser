@@ -3,7 +3,7 @@ runtime: org.kde.Platform
 runtime-version: 6.11
 sdk: org.kde.Sdk
 command: kjournaldbrowser
-rename-icon: "utilities-log-viewer"
+rename-icon: utilities-log-viewer
 finish-args:
   - --share=ipc
   - --socket=fallback-x11
@@ -18,10 +18,12 @@ modules:
       - -DINSTALL_ICONS=ON
     sources:
       - type: archive
-        url: https://download.kde.org/stable/release-service/26.08.1/src/kjournald-26.08.1.tar.xz
-        sha256: 768067c405e4f2b2cb527ffdae0dc27fc311acc191c5cc85fb0108f5f9c73609
+        url: 
+          https://download.kde.org/stable/release-service/26.08.2/src/kjournald-26.08.2.tar.xz
+        sha256: face3b0f8b2a252bae685f6edc060776ead40133cf0ddc171966218849579da7
         x-checker-data:
           type: anitya
           project-id: 8763
           stable-only: true
-          url-template: https://download.kde.org/stable/release-service/$version/src/kjournald-$version.tar.xz
+          url-template: 
+            https://download.kde.org/stable/release-service/$version/src/kjournald-$version.tar.xz
